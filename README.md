@@ -1,68 +1,37 @@
-# Shadcn-UI Template Usage Instructions
+# 🌿 Calmspace
 
-## technology stack
+Calmspace is a modern web application designed to help users find peace, relaxation, and focus.  
+It provides guided sessions, mood tracking, and personalized recommendations — all powered by *Supabase* for authentication and backend services.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🚀 Features
+- 🔑 Secure authentication (login, signup, logout) using Supabase
+- 👤 User session management with React Context
+- 🧘 Guided relaxation and meditation sessions (planned)
+- 📊 Mood tracking dashboard (planned)
+- 📱 Responsive UI for mobile and desktop
 
-All shadcn/ui components have been downloaded under `@/components/ui`.
+---
 
-## File Structure
+## 🛠 Tech Stack
+- *Frontend:* React + TypeScript + Vite
+- *Backend:* Supabase (Postgres, Auth, APIs)
+- *Auth:* Supabase Auth (Email & Password)
+- *Styling:* TailwindCSS (or your chosen UI library)
 
-- `index.html` - HTML entry point
-- `vite.config.ts` - Vite configuration file
-- `tailwind.config.js` - Tailwind CSS configuration file
-- `package.json` - NPM dependencies and scripts
-- `src/app.tsx` - Root component of the project
-- `src/main.tsx` - Project entry point
-- `src/index.css` - Existing CSS configuration
-- `src/pages/Index.tsx` - Home page logic
+---
 
-## Components
+## 📂 Project Structure
 
-- All shadcn/ui components are pre-downloaded and available at `@/components/ui`
-
-## Styling
-
-- Add global styles to `src/index.css` or create new CSS files as needed
-- Use Tailwind classes for styling components
-
-## Development
-
-- Import components from `@/components/ui` in your React components
-- Customize the UI by modifying the Tailwind configuration
-
-## Note
-
-- The `@/` path alias points to the `src/` directory
-- In your typescript code, don't re-export types that you're already importing
-
-# Commands
-
-**Install Dependencies**
-
-```shell
-pnpm i
-```
-
-**Add Dependencies**
-
-```shell
-pnpm add some_new_dependency
-
-**Start Preview**
-
-```shell
-pnpm run dev
-```
-
-**To build**
-
-```shell
-pnpm run build
-```
+calmspace/
+├── src/
+│ ├── AuthContext.tsx # Handles user auth & context
+│ ├── supabaseClient.ts # Supabase client setup
+│ ├── components/ # UI components
+│ ├── pages/ # App pages
+│ └── App.tsx # Main entry point
+├── public/ # Static assets
+├── .env # Environment variables (not committed)
+├── package.json
+└── README.md 
